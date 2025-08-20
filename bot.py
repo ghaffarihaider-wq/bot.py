@@ -122,7 +122,7 @@ def fetch_otps():
 
 
 # ==== MAIN LOOP ====
-if _name_ == "_main_":
+if __name__ == "__main__":
     while True:
         try:
             if not login():
@@ -137,3 +137,4 @@ if _name_ == "_main_":
             print("⚠️ Error:", e)
             print("🔄 Reconnecting in 10 seconds...")
             time.sleep(10)
+
